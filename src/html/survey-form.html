@@ -1,0 +1,71 @@
+<body>
+  <h1 id="title"> Quarantine Survey</h1>
+  
+  <p id="description"> A short survey to see how people are handling the COVID-19 quarantine 🙂🙃 </p>
+  
+  <form id="survey-form">
+    <label for="name" id="name-label">Name</label> 
+      <input id="name" type="text" required placeholder="Full Name" name="person-info">
+    <br><br>
+    <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" required placeholder="Email" name="person-info">
+    <br><br>
+    <label for="age" id="number-label">Age (optional)</label>
+      <input id="number" type="number" placeholder="Age" min="0" max="120" name="person-info">
+    <br><br>
+   <label for="continent" id="number-label">Which continent do you reside on? (optional)</label>
+    <select name="continent" id="dropdown">
+      <option value="" disabled selected hidden>Choose a continent</option>
+      <option value="North America">North America</option>
+      <option value="South America">South America</option>
+      <option value="Asia">Asia</option>
+      <option value="Europe">Europe</option>
+      <option value="Africa">Africa</option>
+      <option value="Australia">Australia</option>
+      <option value="Antartica">Antartica</option>
+    </select>
+      <br>
+    <p> How are you feeling?</p>
+      <input id="feeling-miserable" type="radio" value="Miserable" name="feeling">Miserable 
+</label>
+<label for="fine"> 
+  <input id="feeling-fine" type="radio" value="Fine" name="feeling">Fine 
+</label> 
+  <label for="Elated"> 
+  <input id="feeling-elated" type="radio" value="Elated" name="feeling">Elated 
+</label>
+  <br><br>
+  <p> Which of these activities have you done during Quarantine (check all that apply)?</p>
+  <label for="sleep">    
+    <input id="activity-sleep" type="checkbox" value="sleep" name="activity">Sleep 
+  </label>
+  <br>
+   <label for="read">   
+    <input id="activity-read" type="checkbox" value="read" name="activity">Read 
+  </label>
+  <br>
+<label for="mask">   
+    <input id="activity-mask" type="checkbox" value="mask" name="activity">Wear a mask 
+  </label>      
+  <br>
+<label for="walk">   
+    <input id="activity-walk" type="checkbox" value="walk" name="activity">Take a walk 
+  </label> 
+    <br>
+<label for="bake">   
+    <input id="activity-bake" type="checkbox" value="bake" name="activity">Bake 
+  </label> 
+      <br>
+<label for="zoom">   
+    <input id="activity-zoom" type="checkbox" value="zoom" name="activity">Get on a Zoom call 
+  </label> 
+  <br>
+  <p>Please add additional comments below (optional):</p> 
+  <textarea placeholder="Comments..." form_id="survey-form"></textarea>
+    <br><br>
+  <button id="submit" type=”submit”>Submit</button>
+  </form>
+  
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">  </script>
+</body> 
